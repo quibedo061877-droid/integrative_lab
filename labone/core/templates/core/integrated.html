@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Integrated Data</title>
+  </head>
+  <body>
+    <h1>Integrated User-Product Data</h1>
+    {% for User in users %}
+    <h2>{{ User.name }}</h2>
+    <ul>
+      {% for product in User.products %}
+      <li>{{ product }}</li>
+      {% endfor %}
+    </ul>
+    {% endfor %}
+  </body>
+</html>
